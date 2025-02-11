@@ -37,6 +37,7 @@ while not dd.isdigit() or not (1 <= int(dd) <= 12):
     dd = input("\033[38;2;64;126;231mEnter \033[1mMONTH:\033[0m ")
 
 dd = int(dd)  
+dd = f"{dd:02}"
 
 yy = input("\033[38;2;61;151;184mEnter \033[1mYEAR:\033[0m ")
 while not yy.isdigit() or (len(yy) != 2 and len(yy) != 4):  
